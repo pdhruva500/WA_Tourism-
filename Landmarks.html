@@ -166,12 +166,17 @@
     }
 
     
-.footer {
+body {
+    margin: 0;
+    padding-bottom: 20px;  
+}
+
+footer {
     background-color: #222121;
     color: white;
     text-align: center;
-    padding: 2px;
-    position: fixed;
+    padding: 20px;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -179,6 +184,17 @@
 
 footer a:hover {
     text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
 }
 
   </style>
@@ -231,6 +247,9 @@ footer a:hover {
       <p>Puget Sound is a stunning network of waterways, inlets, and islands that offers a unique blend of natural beauty and urban charm. Visitors can enjoy ferry rides, whale watching, and scenic hikes with breathtaking views of the Pacific Northwest.</p>
     </div>
 
-  </div>
+    <footer>
+      <p>Akshay Suresh</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OHsg-0i6rYQ?si=37xIwcpNaJ-ZLj0K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </footer>
 </body>
 </html>
