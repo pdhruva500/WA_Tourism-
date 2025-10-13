@@ -54,7 +54,7 @@
     }
 
     .nav a:hover, .nav a.active {
-      background-color: #1abc9c;
+      background-color: #08b1ff;
       transform: translateY(-2px);
     }
 
@@ -91,7 +91,7 @@
 
     .transport-text h2 {
       font-family: 'Playfair Display', serif;
-      color: #18a78b;
+      color: #000000;
       font-size: 1.8rem;
       margin-bottom: 10px;
     }
@@ -125,6 +125,33 @@
         width: 100%;
       }
     }
+
+    .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #01775f;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #00987a;
+}
   </style>
 </head>
 
@@ -192,8 +219,30 @@
       <p>The modern Seattle Streetcar connects key urban districts like South Lake Union and Capitol Hill. It’s a great way to move through the heart of the city while reducing congestion and emissions.</p>
     </div>
   </section>
-
   
+   <table class="styled-table">
+        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jeremiah</td>
+                <td>3000</td>
+            </tr>
+            <tr class="active-row">
+                <td>Elizabeth</td>
+                <td>2150</td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+
   <div class="bottom-space"></div>
+
 </body>
 </html>
