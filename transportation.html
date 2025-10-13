@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transportation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-top: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      background-color: #2c3e50;
+      padding: 12px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      margin: 0 15px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .nav a:hover, .nav a.active {
+      background-color: #08b1ff;
+      transform: translateY(-2px);
+    }
+
+    
+    .transport-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 60px auto;
+      max-width: 1100px;
+      padding: 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .transport-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .transport-section img {
+      width: 40%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .transport-text {
+      width: 55%;
+    }
+
+    .transport-text h2 {
+      font-family: 'Playfair Display', serif;
+      color: #000000;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .transport-text p {
+      text-align: justify;
+    }
+
+    .transport-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .bottom-space {
+      height: 150px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .transport-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .transport-section img {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+
+      .transport-text {
+        width: 100%;
+      }
+    }
+
+    .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #01775f;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #00987a;
+}
+  </style>
+</head>
+
+<body>
+  
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="parks.html">Parks</a></li>
+      <li><a href="restaurants.html">Restaurants</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a class="active" href="transportation.html">Transportation</a></li>
+      <li><a href="Landmarks.html">Landmarks</a></li>
+    </ul>
+  </nav>
+
+  <h1>Transportation</h1>
+
+ 
+  <section class="transport-section">
+    <img src="images/link-light-rail.jpg" alt="Link Light Rail">
+    <div class="transport-text">
+      <h2>Link Light Rail</h2>
+      <p>Seattle’s Link Light Rail offers a fast and convenient way to travel between major destinations like the airport, downtown, and the University of Washington. The system is expanding rapidly, providing a clean and efficient alternative to driving.</p>
+    </div>
+  </section>
+
+  <section class="transport-section">
+    <img src="images/seattle-bus.jpg" alt="King County Metro Bus">
+    <div class="transport-text">
+      <h2>King County Metro Buses</h2>
+      <p>Metro buses are Seattle’s backbone of public transit, covering hundreds of routes that reach neighborhoods across King County. Equipped with accessibility features, real-time tracking, and bike racks, they make commuting simple and sustainable.</p>
+    </div>
+  </section>
+
+  <section class="transport-section">
+    <img src="images/seattle-ferry.jpg" alt="Washington State Ferries">
+    <div class="transport-text">
+      <h2>Washington State Ferries</h2>
+      <p>Ferries are an iconic part of Seattle’s transportation scene, connecting the city to nearby islands and the Olympic Peninsula. With beautiful views of Puget Sound, they are both a practical and scenic way to travel.</p>
+    </div>
+  </section>
+
+  <section class="transport-section">
+    <img src="images/seattle-bike-share.jpg" alt="Bike Share Seattle">
+    <div class="transport-text">
+      <h2>Bike Share and Cycling</h2>
+      <p>Seattle’s bike lanes and trails make it easy to get around on two wheels. Bike-sharing programs like Lime and Veo allow riders to rent bikes on demand, promoting a healthy and eco-friendly way to explore the city.</p>
+    </div>
+  </section>
+
+  <section class="transport-section">
+    <img src="images/seattle-water-taxi.jpg" alt="Seattle Water Taxi">
+    <div class="transport-text">
+      <h2>Seattle Water Taxi</h2>
+      <p>The Seattle Water Taxi connects downtown with West Seattle and Vashon Island, offering a peaceful commute across Elliott Bay. It's a unique mode of transport for both daily commuters and tourists enjoying the waterfront skyline.</p>
+    </div>
+  </section>
+
+  <section class="transport-section">
+    <img src="images/seattle-streetcar.jpg" alt="Seattle Streetcar">
+    <div class="transport-text">
+      <h2>Seattle Streetcar</h2>
+      <p>The modern Seattle Streetcar connects key urban districts like South Lake Union and Capitol Hill. It’s a great way to move through the heart of the city while reducing congestion and emissions.</p>
+    </div>
+  </section>
+  
+   <table class="styled-table">
+        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jeremiah</td>
+                <td>3000</td>
+            </tr>
+            <tr class="active-row">
+                <td>Elizabeth</td>
+                <td>2150</td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+
+  <div class="bottom-space"></div>
+
+</body>
+</html>
