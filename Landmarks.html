@@ -6,9 +6,9 @@
   <title>Landmarks</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/xrz0nxk.css">
 
   <style>
-
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -27,8 +27,13 @@
       letter-spacing: 2px;
     }
 
+    /* Example: applying Adobe font to specific element */
+    .adobe-font {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 600;
+      color: #1abc9c;
+    }
 
-    
     nav {
       background-color: #2c3e50;
       padding: 12px 0;
@@ -109,6 +114,13 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
+    /* Example of extra internal style */
+    .highlight {
+      background-color: #ffe599;
+      padding: 5px;
+      border-radius: 4px;
+    }
+
     body::before, body::after {
       content: "";
       position: fixed;
@@ -133,7 +145,7 @@
 
     .google-map {
       position: relative;
-      padding-top: 10%; 
+      padding-top: 10%;
       border-radius: 7px;
       overflow: hidden;
       margin-top: 5px;
@@ -155,48 +167,39 @@
         display: block;
         margin: 0 auto 15px;
       }
-
       .landmarks-container {
         padding: 0 10px;
       }
-
       body::before, body::after {
         display: none;
       }
     }
 
-    
-body {
-    margin: 0;
-    padding-bottom: 20px;  
-}
+    footer {
+      background-color: #222121;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
 
-footer {
-    background-color: #222121;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+    footer a:hover {
+      text-decoration: underline;
+    }
 
-footer a:hover {
-    text-decoration: underline;
-}
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1; 
-}
-
+    main {
+      flex: 1;
+    }
   </style>
 </head>
 
@@ -213,24 +216,26 @@ main {
     </ul>
   </nav>
 
-  <h1>Famous Landmarks</h1>
+  <h1 class="adobe-font">Famous Landmarks</h1>
 
   <div class="landmarks-container">
 
     <div class="landmark">
-      <img src="images/Rainier.jpg" alt="Mount Rainier">
+      <img src="images/Rainier.jpg" alt="Mount Rainier" style="border: 3px solid #1abc9c;"> <!-- Inline style -->
       <h2>Mount Rainier</h2>
-      <p><strong>Location:</strong> Mount Rainier National Park, Washington</p>
+      <p><strong class="highlight">Location:</strong> Mount Rainier National Park, Washington</p>
       <div class="google-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349205.2388879173!2d-121.71492355!3d46.860106949999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490cde6eec94b87%3A0x5cf4a1fb4f91a418!2sMount%20Rainier%20National%20Park!5e0!3m2!1sen!2sus!4v1759954093348!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <p>Mount Rainier National Park is a stunning destination for travelers seeking natural beauty and adventure. Towering at 14,410 feet, Mount Rainier is an active volcano surrounded by alpine meadows, waterfalls, and glaciers, making it a perfect place for hiking, sightseeing, and photography.</p>
+      <p style="font-family: 'proxima-nova', sans-serif; color:#555;"> <!-- Inline style -->
+        Mount Rainier National Park is a stunning destination for travelers seeking natural beauty and adventure. Towering at 14,410 feet, Mount Rainier is an active volcano surrounded by alpine meadows, waterfalls, and glaciers, making it a perfect place for hiking, sightseeing, and photography.
+      </p>
     </div>
 
     <div class="landmark">
       <img src="images/space needle.jpg" alt="Space Needle">
       <h2>Space Needle</h2>
-      <p><strong>Location:</strong> Seattle, Washington</p>
+      <p><strong class="highlight">Location:</strong> Seattle, Washington</p>
       <div class="google-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2893596856075!2d-122.3518523245336!3d47.620506271191104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490151f4ed5b7f9%3A0xdb2ba8689ed0920d!2sSpace%20Needle!5e0!3m2!1sen!2sus!4v1759955250747!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -240,7 +245,7 @@ main {
     <div class="landmark">
       <img src="images/Puget sound.jpg" alt="Puget Sound">
       <h2>Puget Sound</h2>
-      <p><strong>Location:</strong> Puget Sound, Washington</p>
+      <p><strong class="highlight">Location:</strong> Puget Sound, Washington</p>
       <div class="google-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487460.9498593116!2d-125.16614635273685!3d47.64897800045077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54903e54b09738e1%3A0x3390a64604d67e01!2sPuget%20Sound!5e0!3m2!1sen!2sus!4v1759954844072!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -248,8 +253,9 @@ main {
     </div>
 
     <footer>
-      <p>Akshay Suresh</p>
+      <p style="font-family: 'Playfair Display', serif;">Akshay Suresh</p> <!-- Inline style -->
       <iframe width="560" height="315" src="https://www.youtube.com/embed/OHsg-0i6rYQ?si=37xIwcpNaJ-ZLj0K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </footer>
+  </div>
 </body>
 </html>
