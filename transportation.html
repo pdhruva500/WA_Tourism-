@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transportation</title>
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
 
+  <!-- Adobe Fonts Example -->
+  <link rel="stylesheet" href="https://use.typekit.net/xrz0nxk.css">
+
+  <!-- Internal Styles -->
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -24,6 +30,13 @@
       margin-top: 40px;
       letter-spacing: 2px;
       text-transform: uppercase;
+    }
+
+    /* Adobe font example */
+    .adobe-font {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 600;
+      color: #08b1ff;
     }
 
     nav {
@@ -51,6 +64,7 @@
       padding: 8px 14px;
       border-radius: 6px;
       transition: background 0.3s, transform 0.2s;
+      font-family: "proxima-nova", sans-serif; /* Adobe font for nav links */
     }
 
     .nav a:hover, .nav a.active {
@@ -58,7 +72,14 @@
       transform: translateY(-2px);
     }
 
-    
+    /* Highlight class (extra internal style) */
+    .highlight {
+      background-color: #e6f7ff;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-family: 'Playfair Display', serif;
+    }
+
     .transport-section {
       display: flex;
       align-items: center;
@@ -98,6 +119,8 @@
 
     .transport-text p {
       text-align: justify;
+      font-family: "proxima-nova", sans-serif;
+      color: #555;
     }
 
     .transport-section:nth-child(even) {
@@ -126,42 +149,36 @@
       }
     }
 
-body {
-    margin: 0;
-    padding-bottom: 20px;  
-}
+    footer {
+      background-color: #222121;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-family: 'Playfair Display', serif;
+    }
 
-footer {
-    background-color: #222121;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+    footer a:hover {
+      text-decoration: underline;
+    }
 
-footer a:hover {
-    text-decoration: underline;
-}
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1; 
-}
-
-</style>
+    main {
+      flex: 1; 
+    }
+  </style>
 </head>
 
 <body>
-  
   <nav>
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
@@ -174,19 +191,20 @@ main {
     </ul>
   </nav>
 
-  <h1>Transportation</h1>
+  <h1 class="adobe-font">Transportation</h1>
 
- 
   <section class="transport-section">
-    <img src="images/linklightrail.jpg" alt="Link Light Rail">
+    <img src="images/linklightrail.jpg" alt="Link Light Rail" style="border: 3px solid #08b1ff;"> 
     <div class="transport-text">
-      <h2>Link Light Rail</h2>
-      <p>Seattle’s Link Light Rail offers a fast and convenient way to travel between major destinations like the airport, downtown, and the University of Washington. The system is expanding rapidly, providing a clean and efficient alternative to driving.</p>
+      <h2 class="highlight">Link Light Rail</h2>
+      <p style="font-size: 1.05rem;"> 
+        Seattle’s Link Light Rail offers a fast and convenient way to travel between major destinations like the airport, downtown, and the University of Washington. The system is expanding rapidly, providing a clean and efficient alternative to driving.
+      </p>
     </div>
   </section>
 
   <section class="transport-section">
-    <img src="images/metrobus.jpg" alt="King County Metro Bus">
+    <img src="images/metrobus.jpg" alt="King County Metro Bus" style="border: 3px solid #08b1ff;"> > 
     <div class="transport-text">
       <h2>King County Metro Buses</h2>
       <p>Metro buses are Seattle’s backbone of public transit, covering hundreds of routes that reach neighborhoods across King County. Equipped with accessibility features, real-time tracking, and bike racks, they make commuting simple and sustainable.</p>
@@ -202,7 +220,7 @@ main {
   </section>
 
   <section class="transport-section">
-    <img src="images/Bike.jpg" alt="Bike Share Seattle">
+    <img src="images/Bike.jpg" alt="Bike Share Seattle" style="border: 3px solid #08b1ff;"> ;" > 
     <div class="transport-text">
       <h2>Bike Share and Cycling</h2>
       <p>Seattle’s bike lanes and trails make it easy to get around on two wheels. Bike-sharing programs like Lime and Veo allow riders to rent bikes on demand, promoting a healthy and eco-friendly way to explore the city.</p>
@@ -210,7 +228,7 @@ main {
   </section>
 
   <section class="transport-section">
-    <img src="images/watertaxi.jpg" alt="Seattle Water Taxi">
+    <img src="images/watertaxi.jpg" alt="Seattle Water Taxi" style="border: 3px solid #08b1ff;" >
     <div class="transport-text">
       <h2>Seattle Water Taxi</h2>
       <p>The Seattle Water Taxi connects downtown with West Seattle and Vashon Island, offering a peaceful commute across Elliott Bay. It's a unique mode of transport for both daily commuters and tourists enjoying the waterfront skyline.</p>
@@ -218,25 +236,25 @@ main {
   </section>
 
   <section class="transport-section">
-    <img src="images/seattlestreetcar.jpg" alt="Seattle Streetcar">
+    <img src="images/seattlestreetcar.jpg" alt="Seattle Streetcar" style="border: 3px solid #08b1ff;"> >
     <div class="transport-text">
       <h2>Seattle Streetcar</h2>
       <p>The modern Seattle Streetcar connects key urban districts like South Lake Union and Capitol Hill. It’s a great way to move through the heart of the city while reducing congestion and emissions.</p>
     </div>
   </section>
 
-<div class="bottom-space"></div>
+  <div class="bottom-space"></div>
 
-<body>
-  <p>I challenged myself by trying out new css features such as the body for each of my content how I used margins which was somethign I struggled in already.
-     </p>
-</body>
+  <p style="text-align:center; font-family:'proxima-nova', sans-serif; color:#333;">
+    I challenged myself by trying out new CSS features such as margins and layout organization to improve spacing and design.
+  </p>
+
   <footer>
     <p>Akshay Suresh</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cwcsKxnJeEE?si=CzAfRktMXdX9olcF" 
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-      encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cwcsKxnJeEE?si=CzAfRktMXdX9olcF"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
   </footer>
 
