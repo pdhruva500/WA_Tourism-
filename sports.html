@@ -6,10 +6,59 @@
     <title>Document</title>
        <link rel="stylesheet" href="css/style.css">
        <style>
-    .center-text {
-      text-align: center;
-    }
-  </style>
+  
+
+  .center-text {
+    text-align: center;
+  }
+
+  
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    min-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px; 
+    overflow: hidden;
+  }
+
+  .styled-table thead tr {
+    background-color: #004d66;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .styled-table tbody tr:hover {
+    background-color: #cfe8f3; 
+  }
+
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .video-container iframe {
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+  }
+</style>
+
+
+ 
+
 </head>
 <body>
     <ul class="nav">
@@ -49,9 +98,65 @@ compete in Major League Soccer (MLS) as a member club of the Western Conference.
 <p>Location: Seattle, Washington</p>
 <p>Description: The Seattle Orcas are a professional cricket team based in Seattle. They compete in Major League Cricket (MLC) as a member club of the league. The team was established in 2023 and aims to promote and develop the sport of cricket in the Pacific Northwest region of the United States.</p>
 </div>
+</div>
+
+<div class="sports-table">
+    <h2>Seattle Professional Sports Teams</h2>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Sport</th>
+                <th>Year Founded</th>
+                <th>Championships</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Seattle Seahawks</td>
+                <td>Football (NFL)</td>
+                <td>1976</td>
+                <td>1 Super Bowl</td>
+            </tr>
+            <tr class="active-row">
+                <td>Seattle Mariners</td>
+                <td>Baseball (MLB)</td>
+                <td>1977</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Seattle Sounders FC</td>
+                <td>Soccer (MLS)</td>
+                <td>2009</td>
+                <td>1 MLS Cup</td>
+            </tr>
+            <tr class="active-row">
+                <td>Seattle Orcas</td>
+                <td>Cricket (MLC)</td>
+                <td>2023</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<h2 class="center-text">Watch: Seattle Sports Highlights</h2>
+
+<div class="video-box">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JAHn4zamXsg?si=9ft2X1pM3u1v8s2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
+
  <div class="footer">
     <p>Ehaan</p>
 </div>
 
-</body>
+
+</body
+>
 </html>
