@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Washington Tourism</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ylk0jqy.css">
     <style>
         body {
             background-image: url('images/homebackground.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            background-attachment: fixed;
+            background-attachment: fixed; /* NEW FEATURE (makes the background fixed while scrolling) */
             
+        }
+
+        .head-color {
+            color: rgb(144,169,85);
+            text-align: center;
+        }
+
+        .head-backgroundbox {
+            background-color: rgb(236, 235, 235); 
+            padding: 8px 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            font-size: 1.8rem; /* NEW FEATURE (used rem to make the text size update automatically) */
+            line-height: 1.4;
+            margin: 0;
+            display: inline-block;
         }
     </style>
 </head>
@@ -29,7 +46,7 @@
 
 <div class="main-content">
     <div class="title-box">
-        <h1 class="title-color">Washington Tourism</h1>
+        <h1 class="title-color title-font">Washington Tourism</h1>
     </div>
     <div class="description-box">
         <p class="description">
@@ -43,14 +60,12 @@ Plan your journey today and see why Washington is one of the most captivating de
     <div class="video-box">
         <iframe src="https://www.youtube-nocookie.com/embed/El774k8i1N4?si=0MuLW8FI4LkZunor&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="footer">
-  <p>Prasham Dhruva</p>
-</div>
 </div>
 
-<div class="tourism-table">
-    <h2>Top Tourist Attractions in Washington State</h2>
+<div class="tourism-table" style="display: grid; place-items: center;">
+    <h2 class="head-color head-backgroundbox title-font">Top Tourist Attractions in Washington State</h2>
 
+    <div class="description-box">
     <table class="styled-table">
         <thead>
             <tr>
@@ -93,9 +108,40 @@ Plan your journey today and see why Washington is one of the most captivating de
             </tr>
         </tbody>
     </table>
+    </div>
+</div>
+
+<div class="head-color" style="padding-top:10px;">
+    <h2 class="head-backgroundbox title-font"><u>Image Gallery</u></h2>
+</div>
+
+<div class="gallery-container" 
+     style="display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(2, auto); 
+            gap: 20px; 
+            justify-items: center; 
+            align-items: center; 
+            padding: 20px; 
+            max-width: 1000px; 
+            margin: 0 auto;">
+
+  <img src="images/galleryimage1.jpg" style="width:100%; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
+  <img src="images/galleryimage2.jpg" style="width:100%; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
+  <img src="images/galleryimage3.jpg" style="width:100%; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
+  <img src="images/galleryimage4.jpg" style="width:100%; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
+  <img src="images/galleryimage5.webp" style="width:100%; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
+  <img src="images/galleryimage6.webp" style="width:100%; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
+
 </div>
 
 
 
+<footer class="footer">
+    <p>Prasham Dhruva</p>
+  </footer>
+
 </body>
 </html>
+
+
