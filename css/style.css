@@ -204,10 +204,10 @@ th {
 }
  
 /* Optional: different background colors per category */
-.coffee { background-color: #fff7e6; }    /* light tan */
-.breakfast { background-color: #fffde7; } /* light yellow */
-.lunch { background-color: #e6f7ff; }     /* light blue */
-.dinner { background-color: #fbeaea; }    /* light pink */
+.coffee { background-color: #E5EDD4; }    /* light tan */
+.breakfast { background-color: #E5EDD4; } /* light yellow */
+.lunch { background-color: #E5EDD4; }     /* light blue */
+.dinner { background-color: #E5EDD4; }    /* light pink */
  
 /* ===== FOOTER ===== */
 .footer {

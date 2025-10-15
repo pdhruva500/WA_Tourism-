@@ -1,52 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places to Eat!</title>
-    <link rel="stylesheet" href="css/style.css">
- <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="parks.html">Parks</a></li>
-                <li><a href="restaurants.html">Restaurants</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="sports.html">Sports</a></li>
-                <li><a href="transportation.html">Transportation</a></li>
-                <li><a href="Landmarks.html">Landmarks</a></li>
-  </ul>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places to Eat!</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f3f6ef;
+      color: #2f3e2f;
+    }
+
+    .nav {
+      background-color: #7a9e7e;
+    }
+
+    .nav a {
+      color: #f8fdf7;
+    }
+
+    .nav a:hover {
+      background-color: #5b7d5b;
+    }
+
+    .page-title h1 {
+      color: #446b47;
+    }
+
+    .page-title p {
+      color: #3e533f;
+    }
+
+    .park-info h1 {
+      color: #446b47;
+    }
+
+    a {
+      color: #446b47;
+    }
+
+    a:hover {
+      color: #2f3e2f;
+    }
+
+    .footer {
+      background-color: #7a9e7e;
+      color: #f8fdf7;
+    }
+  </style>
 </head>
+
 <body>
- <div class="food-grid">
+
+  <!-- Navigation -->
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="parks.html">Parks</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="sports.html">Sports</a></li>
+    <li><a href="transportation.html">Transportation</a></li>
+    <li><a href="landmarks.html">Landmarks</a></li>
+  </ul>
+
+  <!-- Page title -->
+  <div class="page-title">
+    <h1>Places to Eat!</h1>
+    <p>From cozy cafés to fine dining — here are some local favorites for every meal.</p>
+  </div>
+
+  <!-- Breakfast section -->
+  <h2 style="text-align:center;">Breakfast Spots</h2>
+  <div class="food-grid">
     <div class="food-item breakfast">
-      <h2>Breakfast</h2>
-      <img src="images/breakfast.jpg" alt="Breakfast Place">
-      <p>Sunny Side Diner — pancakes, coffee, and good vibes.</p>
+      <h3>Farine Bakery</h3>
+      <img src="images/Farine .webp" alt="Farine Bakery">
+      <p>Fresh pastries, croissants, and artisan breads baked daily.</p>
+      <p><strong>Price:</strong> $ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://www.farinecafe.com/menus">Menu</a></p>
     </div>
 
-    <div class="food-item lunch">
-      <h2>Lunch</h2>
-      <img src="images/lunch.jpg" alt="Lunch Restaurant">
-      <p>Harvest Grill — light meals, salads, and sandwiches.</p>
+    <div class="food-item breakfast">
+      <h3>Gilbert’s Bagels</h3>
+      <img src="images/Gilberts.jfif" alt="Gilbert’s Bagels">
+      <p>Classic New York–style bagels and hearty breakfast sandwiches.</p>
+      <p><strong>Price:</strong> $$ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://www.gilbertsonmain.com/menus.html">Menu</a></p>
     </div>
 
-    <div class="food-item dinner">
-      <h2>Dinner</h2>
-      <img src="images/dinner.jpg" alt="Dinner Restaurant">
-      <p>La Luna — Italian dinners and candlelight atmosphere.</p>
-    </div>
-
-    <div class="food-item coffee">
-      <h2>Coffee</h2>
-      <img src="images/coffee.jpg" alt="Coffee Shop">
-      <p>5 Stones Café — local coffee and pastries.</p>
+    <div class="food-item breakfast">
+      <h3>The French Bakery</h3>
+      <img src="images/French Bakery .webp" alt="The French Bakery">
+      <p>Elegant pastries and coffee with a Parisian touch.</p>
+      <p><strong>Price:</strong> $$$ | ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.thefrenchbakery.com/cafe-menu/">Menu</a></p>
     </div>
   </div>
 
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 Sammie Kumar</p>
+  <!-- Lunch section -->
+  <h2 style="text-align:center;">Lunch Spots</h2>
+  <div class="food-grid">
+    <div class="food-item lunch">
+      <h3>Fern Thai on Main</h3>
+      <img src="images/Fern Thai.webp" alt="Fern Thai on Main">
+      <p>Comforting Thai dishes with authentic flavors and fresh ingredients.</p>
+      <p><strong>Price:</strong> $$ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://fernthaionmain.com/bellevue-fern-thai-on-main-food-menu">Menu</a></p>
     </div>
-  </body>
 
+    <div class="food-item lunch">
+      <h3>Din Tai Fung</h3>
+      <img src="images/DinTaiFung.jpg" alt="Din Tai Fung">
+      <p>World-famous dumplings and noodles in a clean, stylish setting.</p>
+      <p><strong>Price:</strong> $$$ | ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://dtf.com/en-us/menu">Menu</a></p>
+    </div>
+
+    <div class="food-item lunch">
+      <h3>Tipsy Cow</h3>
+      <img src="images/Tipsy Cow.jpg" alt="Tipsy Cow">
+      <p>Gourmet burgers and craft beers — casual and trendy.</p>
+      <p><strong>Price:</strong> $$$ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://tipsycowburgerbar.com/eat/">Menu</a></p>
+    </div>
+  </div>
+
+  <!-- Dinner section -->
+  <h2 style="text-align:center;">Dinner Spots</h2>
+  <div class="food-grid">
+    <div class="food-item dinner">
+      <h3>Cactus</h3>
+      <img src="images/Cactus.avif" alt="Cactus">
+      <p>Vibrant Southwestern cuisine with bold flavors and margaritas.</p>
+      <p><strong>Price:</strong> $$ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://www.cactusrestaurants.com/menus">Menu</a></p>
+    </div>
+
+    <div class="food-item dinner">
+      <h3>Farzi Café</h3>
+      <img src="images/Farzi.jpg" alt="Farzi Café">
+      <p>Indian fusion dishes and innovative presentation in a modern setting.</p>
+      <p><strong>Price:</strong> $$$ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://farzicafeusa.com/pdf/FarziCafe-All-Day-Dining-Menu-New.pdf">Menu</a></p>
+    </div>
+
+    <div class="food-item dinner">
+      <h3>Joey’s</h3>
+      <img src="images/Joeys.jpg" alt="Joey’s">
+      <p>Upscale dining with globally inspired cuisine and a lively atmosphere.</p>
+      <p><strong>Price:</strong> $$$$ | ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://joeyrestaurants.com/menu/joey-bellevue">Menu</a></p>
+    </div>
+  </div>
+
+  <!-- Desserts and coffee section -->
+  <h2 style="text-align:center;">Desserts & Coffee</h2>
+  <div class="food-grid">
+    <div class="food-item coffee">
+      <h3>5 Stones Coffee</h3>
+      <img src="images/5 Stones.webp" alt="5 Stones Coffee">
+      <p>Local favorite for lattes and pastries in a cozy, modern space.</p>
+      <p><strong>Price:</strong> $ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://5stonescoffeeco.com/pages/cafe-menu">Menu</a></p>
+    </div>
+
+    <div class="food-item coffee">
+      <h3>Nana’s Green Tea</h3>
+      <img src="images/Nana's Green TEa.avif" alt="Nana’s Green Tea">
+      <p>Matcha-based drinks and light Japanese desserts with calm vibes.</p>
+      <p><strong>Price:</strong> $$ | ⭐⭐⭐⭐☆</p>
+      <p><a href="https://global.nanasgreentea.com/seattle-menu/">Menu</a></p>
+    </div>
+
+    <div class="food-item coffee">
+      <h3>Molly Moon’s Ice Cream</h3>
+      <img src="images/Molly Moons.jfif" alt="Molly Moon’s">
+      <p>Homemade ice cream made from local ingredients and seasonal flavors.</p>
+      <p><strong>Price:</strong> $$$ | ⭐⭐⭐⭐⭐</p>
+      <p><a href="https://www.mollymoon.com/flavors/always">Menu</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Sammie Kumar</p>
+  </div>
+
+</body>
 </html>
