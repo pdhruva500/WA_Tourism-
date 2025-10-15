@@ -5,12 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
        <link rel="stylesheet" href="css/style.css">
-       <style>
-    .center-text {
-      text-align: center;
-    
-    }
-  </style>
+    <style>
+  .center-text {
+    text-align: center;
+  }
+
+
+  .events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+  }
+
+ 
+  .event {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  .event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .event h2 {
+    color: #005f6b;
+    margin-top: 10px;
+  }
+
+  .event p {
+    line-height: 1.5;
+    color: #333;
+  }
+
+ 
+  .event iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+  }
+
+  .footer {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+</style>
+
+
+
 </head>
 <body>
     <ul class="nav">
@@ -25,46 +85,54 @@
             </ul>
 <h1 class="center-text" > Events in Washington</h1>
 <div class="events-container">
-    <div class="event">
+ <div class="events-container">
+
+  <div class="event">
     <img src="images/seafair.jpg" alt="Seafair">
     <h2>Seafair</h2>
-    <p>Date: July - August</p>
-    <p>Location: Seattle, Washington</p>
-    <p>  Description: Seafair is an annual summer festival in Seattle that features a variety of events, including parades, hydro   plane races, air shows, and community celebrations. It is one of the largest and most popular festivals in the Pacific Northwest, attracting hundreds of thousands of visitors each year.</p>
-    </div>
-    <div class="event">
+    <p><strong>Date:</strong> July - August</p>
+    <p><strong>Location:</strong> Seattle, Washington</p>
+    <p>Seafair is an annual summer festival in Seattle that features a variety of events, including parades, hydroplane races, air shows, and community celebrations.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.7543542572157!2d-122.35226302405325!3d47.60620987918442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901545c9c52c4f%3A0x6c967b46b0c1b1a3!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1739580000000!5m2!1sen!2sus" 
+    allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="event">
     <img src="images/bumbershoot.jpg" alt="Bumbershoot">
     <h2>Bumbershoot</h2>
-    <p>Date: Labor Day Weekend (September)</p>
-    <p>Location: Seattle Center, Seattle, Washington</p>
-    <p>Description: Bumbershoot is an annual music and arts festival held at Seattle Center. It features a diverse lineup of musical performances, comedy shows, visual arts, dance, and more. The festival attracts both local and international artists and is known for its eclectic mix of genres and styles.</p>
-    </div>
-    <div class="event">
+    <p><strong>Date:</strong> Labor Day Weekend (September)</p>
+    <p><strong>Location:</strong> Seattle Center, Seattle, Washington</p>
+    <p>Bumbershoot is an annual music and arts festival held at Seattle Center, featuring diverse performances and artists from around the world.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.493464616823!2d-122.35186192405295!3d47.62051317848482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490151b5e74d8c1%3A0x271a040fa0b9eae2!2sSeattle%20Center!5e0!3m2!1sen!2sus!4v1739580050000!5m2!1sen!2sus" 
+    allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="event">
     <img src="images/fremont.jpg" alt="Fremont Fair">
     <h2>Fremont Fair</h2>
-    <p>Date: June</p>
-    <p>Location: Fremont neighborhood, Seattle, Washington</p>
-    <p>Description: The Fremont Fair is an annual street fair held in the Fremont neighborhood of Seattle. It features live music, food vendors, arts and crafts booths, and a variety of family-friendly activities. The fair is known for its quirky and eclectic atmosphere, reflecting the unique character of the Fremont community.</p>
-    </div>
-    <div class="event">
-    <img src="images/statefair.jpg" alt="State Fair">
-    <h2>Washington State Fair</h2>
-    <p>Date: September</p>
-    <p>Location: Puyallup, Washington</p>
-    <p>Description: The Washington State Fair, also known as the Puyallup Fair, is one of the largest fairs in the United States. It features a wide range of attractions, including agricultural exhibits, carnival rides, live entertainment, food vendors, and more. The fair celebrates the agricultural heritage of Washington State and provides fun for the whole family.</p>
-    </div>
-    <div class="google-map">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.793252888926!2d-122.30113832404853!3d47.18495842085786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490ff8a3c4dcd7f%3A0x8eab7e7b5bde1970!2sWashington%20State%20Fair!5e0!3m2!1sen!2sus!4v1739555440000!5m2!1sen!2sus" 
-    width="600" 
-    height="450" 
-    style="border:0; border-radius:10px;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
+    <p><strong>Date:</strong> June</p>
+    <p><strong>Location:</strong> Fremont, Seattle, Washington</p>
+    <p>The Fremont Fair features live music, food vendors, arts and crafts booths, and fun family activities in Seattle’s quirky Fremont neighborhood.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.8309445335633!2d-122.35285332405337!3d47.65016027764602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015b6ccaf8e7d%3A0x5c8a1798e5b1a7a1!2sFremont%2C%20Seattle%2C%20WA!5e0!3m2!1sen!2sus!4v1739580090000!5m2!1sen!2sus" 
+    allowfullscreen="" loading="lazy"></iframe>
+  </div>
 
+  <div class="event">
+    <img src="images/statefair.jpg" alt="Washington State Fair">
+    <h2>Washington State Fair</h2>
+    <p><strong>Date:</strong> September</p>
+    <p><strong>Location:</strong> Puyallup, Washington</p>
+    <p>The Washington State Fair is one of the largest fairs in the United States, featuring carnival rides, concerts, exhibits, and delicious fair food.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.793252888926!2d-122.30113832404853!3d47.18495842085786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490ff8a3c4dcd7f%3A0x8eab7e7b5bde1970!2sWashington%20State%20Fair!5e0!3m2!1sen!2sus!4v1739555440000!5m2!1sen!2sus" 
+    allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+</div>
+<div class="video-box">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P_eh3IQQOgo?si=zDC6e-pV61OkHXx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+
+</div>
 
      <div class="footer">
         <p>Ehaan</p>
