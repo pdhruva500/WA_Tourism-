@@ -56,14 +56,14 @@ ul.nav a:hover {
 }
 
 .main-content {
-    display: grid;
-    place-items: center; 
-    align-content: start;
-    height: 80vh; 
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom:300px;
+  display: grid;
+  place-items: center; 
+  align-content: start;
+  height: auto;         
+  padding: 40px 0;      
 }
+
+
 
 .title-box {
     background-color: rgba(255, 255, 255, 0.5); 
@@ -124,6 +124,7 @@ video {
 table {
   width: 100%;
   border-collapse: collapse;
+  padding-bottom: 40px;
 }
 
 th, td {
@@ -217,6 +218,10 @@ th {
   padding: 10px 0;
   margin-top: 30px;
   width: 100%;
+  position: static;
+  bottom: 0;
+  left: 0;
+  
 }
 
 
