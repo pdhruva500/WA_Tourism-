@@ -5,14 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transportation</title>
   <link rel="stylesheet" href="css/style.css" />
-
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&family=Dancing+Script&display=swap" rel="stylesheet" />
 
-  <!-- Adobe Fonts Example -->
-  <link rel="stylesheet" href="https://use.typekit.net/xrz0nxk.css">
-
-  <!-- Internal Styles -->
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -20,6 +15,9 @@
       background-color: #f9fafb;
       color: #333;
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     h1 {
@@ -30,13 +28,6 @@
       margin-top: 40px;
       letter-spacing: 2px;
       text-transform: uppercase;
-    }
-
-    /* Adobe font example */
-    .adobe-font {
-      font-family: "proxima-nova", sans-serif;
-      font-weight: 600;
-      color: #08b1ff;
     }
 
     nav {
@@ -64,20 +55,11 @@
       padding: 8px 14px;
       border-radius: 6px;
       transition: background 0.3s, transform 0.2s;
-      font-family: "proxima-nova", sans-serif; /* Adobe font for nav links */
     }
 
     .nav a:hover, .nav a.active {
       background-color: #08b1ff;
       transform: translateY(-2px);
-    }
-
-    /* Highlight class (extra internal style) */
-    .highlight {
-      background-color: #e6f7ff;
-      padding: 5px 10px;
-      border-radius: 6px;
-      font-family: 'Playfair Display', serif;
     }
 
     .transport-section {
@@ -119,8 +101,6 @@
 
     .transport-text p {
       text-align: justify;
-      font-family: "proxima-nova", sans-serif;
-      color: #555;
     }
 
     .transport-section:nth-child(even) {
@@ -130,6 +110,21 @@
     .bottom-space {
       height: 150px;
       margin-top: 50px;
+    }
+
+    
+    .custom-paragraph {
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      font-size: 1.3rem;
+      color: #2c3e50;
+      background-color: #e0f7fa;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      line-height: 1.8;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
 
     @media (max-width: 768px) {
@@ -147,6 +142,11 @@
       .transport-text {
         width: 100%;
       }
+
+      .custom-paragraph {
+        font-size: 1.1rem;
+        padding: 15px;
+      }
     }
 
     footer {
@@ -154,27 +154,13 @@
       color: white;
       text-align: center;
       padding: 20px;
-      position: relative;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      font-family: 'Playfair Display', serif;
+      margin-top: auto;
     }
 
     footer a:hover {
       text-decoration: underline;
     }
 
-    html, body {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1; 
-    }
   </style>
 </head>
 
@@ -191,23 +177,21 @@
     </ul>
   </nav>
 
-  <h1 class="adobe-font">Transportation</h1>
+  <h1>Transportation</h1>
 
   <section class="transport-section">
-    <img src="images/linklightrail.jpg" alt="Link Light Rail" style="border: 3px solid #08b1ff;"> 
+    <img src="images/linklightrail.jpg" alt="Link Light Rail">
     <div class="transport-text">
-      <h2 class="highlight">Link Light Rail</h2>
-      <p style="font-size: 1.05rem;"> 
-        Seattle’s Link Light Rail offers a fast and convenient way to travel between major destinations like the airport, downtown, and the University of Washington. The system is expanding rapidly, providing a clean and efficient alternative to driving.
-      </p>
+      <h2>Link Light Rail</h2>
+      <p>Seattle’s Link Light Rail offers a fast and convenient way to travel between major destinations like the airport, downtown, and the University of Washington.</p>
     </div>
   </section>
 
   <section class="transport-section">
-    <img src="images/metrobus.jpg" alt="King County Metro Bus" style="border: 3px solid #08b1ff;"> > 
+    <img src="images/metrobus.jpg" alt="King County Metro Bus">
     <div class="transport-text">
       <h2>King County Metro Buses</h2>
-      <p>Metro buses are Seattle’s backbone of public transit, covering hundreds of routes that reach neighborhoods across King County. Equipped with accessibility features, real-time tracking, and bike racks, they make commuting simple and sustainable.</p>
+      <p>Metro buses are Seattle’s backbone of public transit, covering hundreds of routes that reach neighborhoods across King County.</p>
     </div>
   </section>
 
@@ -215,46 +199,45 @@
     <img src="images/Ferries.jpg" alt="Washington State Ferries">
     <div class="transport-text">
       <h2>Washington State Ferries</h2>
-      <p>Ferries are an iconic part of Seattle’s transportation scene, connecting the city to nearby islands and the Olympic Peninsula. With beautiful views of Puget Sound, they are both a practical and scenic way to travel.</p>
+      <p>Ferries are an iconic part of Seattle’s transportation scene, connecting the city to nearby islands and the Olympic Peninsula.</p>
     </div>
   </section>
 
   <section class="transport-section">
-    <img src="images/Bike.jpg" alt="Bike Share Seattle" style="border: 3px solid #08b1ff;"> ;" > 
+    <img src="images/Bike.jpg" alt="Bike Share Seattle">
     <div class="transport-text">
       <h2>Bike Share and Cycling</h2>
-      <p>Seattle’s bike lanes and trails make it easy to get around on two wheels. Bike-sharing programs like Lime and Veo allow riders to rent bikes on demand, promoting a healthy and eco-friendly way to explore the city.</p>
+      <p>Seattle’s bike lanes and trails make it easy to get around on two wheels.</p>
     </div>
   </section>
 
   <section class="transport-section">
-    <img src="images/watertaxi.jpg" alt="Seattle Water Taxi" style="border: 3px solid #08b1ff;" >
+    <img src="images/watertaxi.jpg" alt="Seattle Water Taxi">
     <div class="transport-text">
       <h2>Seattle Water Taxi</h2>
-      <p>The Seattle Water Taxi connects downtown with West Seattle and Vashon Island, offering a peaceful commute across Elliott Bay. It's a unique mode of transport for both daily commuters and tourists enjoying the waterfront skyline.</p>
+      <p>The Seattle Water Taxi connects downtown with West Seattle and Vashon Island.</p>
     </div>
   </section>
 
   <section class="transport-section">
-    <img src="images/seattlestreetcar.jpg" alt="Seattle Streetcar" style="border: 3px solid #08b1ff;"> >
+    <img src="images/seattlestreetcar.jpg" alt="Seattle Streetcar">
     <div class="transport-text">
       <h2>Seattle Streetcar</h2>
-      <p>The modern Seattle Streetcar connects key urban districts like South Lake Union and Capitol Hill. It’s a great way to move through the heart of the city while reducing congestion and emissions.</p>
+      <p>The modern Seattle Streetcar connects key urban districts like South Lake Union and Capitol Hill.</p>
     </div>
   </section>
 
-  <div class="bottom-space"></div>
-
-  <p style="text-align:center; font-family:'proxima-nova', sans-serif; color:#333;">
-    I challenged myself by trying out new CSS features such as margins and layout organization to improve spacing and design.
+  
+  <p class="custom-paragraph">
+    I challenged myself by trying out new CSS features such as the body for each of my content and how I used margins, which was something I had struggled with before. It was fun to experiment with fonts, spacing, and responsive layouts to make the webpage look more professional and visually appealing.
   </p>
 
   <footer>
     <p>Akshay Suresh</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cwcsKxnJeEE?si=CzAfRktMXdX9olcF"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cwcsKxnJeEE?si=CzAfRktMXdX9olcF" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
     </iframe>
   </footer>
 
