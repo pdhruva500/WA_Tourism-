@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transportation</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&family=Dancing+Script&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -14,6 +15,9 @@
       background-color: #f9fafb;
       color: #333;
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     h1 {
@@ -58,7 +62,6 @@
       transform: translateY(-2px);
     }
 
-    
     .transport-section {
       display: flex;
       align-items: center;
@@ -109,6 +112,21 @@
       margin-top: 50px;
     }
 
+    
+    .custom-paragraph {
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      font-size: 1.3rem;
+      color: #2c3e50;
+      background-color: #e0f7fa;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      line-height: 1.8;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
     @media (max-width: 768px) {
       .transport-section {
         flex-direction: column;
@@ -124,44 +142,29 @@
       .transport-text {
         width: 100%;
       }
+
+      .custom-paragraph {
+        font-size: 1.1rem;
+        padding: 15px;
+      }
     }
 
-body {
-    margin: 0;
-    padding-bottom: 20px;  
-}
+    footer {
+      background-color: #222121;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
 
-footer {
-    background-color: #222121;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+    footer a:hover {
+      text-decoration: underline;
+    }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1; 
-}
-
-</style>
+  </style>
 </head>
 
 <body>
-  
   <nav>
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
@@ -176,12 +179,11 @@ main {
 
   <h1>Transportation</h1>
 
- 
   <section class="transport-section">
     <img src="images/linklightrail.jpg" alt="Link Light Rail">
     <div class="transport-text">
       <h2>Link Light Rail</h2>
-      <p>Seattle’s Link Light Rail offers a fast and convenient way to travel between major destinations like the airport, downtown, and the University of Washington. The system is expanding rapidly, providing a clean and efficient alternative to driving.</p>
+      <p>Seattle’s Link Light Rail offers a fast and convenient way to travel between major destinations like the airport, downtown, and the University of Washington.</p>
     </div>
   </section>
 
@@ -189,7 +191,7 @@ main {
     <img src="images/metrobus.jpg" alt="King County Metro Bus">
     <div class="transport-text">
       <h2>King County Metro Buses</h2>
-      <p>Metro buses are Seattle’s backbone of public transit, covering hundreds of routes that reach neighborhoods across King County. Equipped with accessibility features, real-time tracking, and bike racks, they make commuting simple and sustainable.</p>
+      <p>Metro buses are Seattle’s backbone of public transit, covering hundreds of routes that reach neighborhoods across King County.</p>
     </div>
   </section>
 
@@ -197,7 +199,7 @@ main {
     <img src="images/Ferries.jpg" alt="Washington State Ferries">
     <div class="transport-text">
       <h2>Washington State Ferries</h2>
-      <p>Ferries are an iconic part of Seattle’s transportation scene, connecting the city to nearby islands and the Olympic Peninsula. With beautiful views of Puget Sound, they are both a practical and scenic way to travel.</p>
+      <p>Ferries are an iconic part of Seattle’s transportation scene, connecting the city to nearby islands and the Olympic Peninsula.</p>
     </div>
   </section>
 
@@ -205,7 +207,7 @@ main {
     <img src="images/Bike.jpg" alt="Bike Share Seattle">
     <div class="transport-text">
       <h2>Bike Share and Cycling</h2>
-      <p>Seattle’s bike lanes and trails make it easy to get around on two wheels. Bike-sharing programs like Lime and Veo allow riders to rent bikes on demand, promoting a healthy and eco-friendly way to explore the city.</p>
+      <p>Seattle’s bike lanes and trails make it easy to get around on two wheels.</p>
     </div>
   </section>
 
@@ -213,7 +215,7 @@ main {
     <img src="images/watertaxi.jpg" alt="Seattle Water Taxi">
     <div class="transport-text">
       <h2>Seattle Water Taxi</h2>
-      <p>The Seattle Water Taxi connects downtown with West Seattle and Vashon Island, offering a peaceful commute across Elliott Bay. It's a unique mode of transport for both daily commuters and tourists enjoying the waterfront skyline.</p>
+      <p>The Seattle Water Taxi connects downtown with West Seattle and Vashon Island.</p>
     </div>
   </section>
 
@@ -221,11 +223,14 @@ main {
     <img src="images/seattlestreetcar.jpg" alt="Seattle Streetcar">
     <div class="transport-text">
       <h2>Seattle Streetcar</h2>
-      <p>The modern Seattle Streetcar connects key urban districts like South Lake Union and Capitol Hill. It’s a great way to move through the heart of the city while reducing congestion and emissions.</p>
+      <p>The modern Seattle Streetcar connects key urban districts like South Lake Union and Capitol Hill.</p>
     </div>
   </section>
 
-<div class="bottom-space"></div>
+  
+  <p class="custom-paragraph">
+    I challenged myself by trying out new CSS features such as the body for each of my content and how I used margins, which was something I had struggled with before. It was fun to experiment with fonts, spacing, and responsive layouts to make the webpage look more professional and visually appealing.
+  </p>
 
   <footer>
     <p>Akshay Suresh</p>
