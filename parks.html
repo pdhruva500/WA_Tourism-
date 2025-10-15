@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,30 @@
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
-      background-color: #f3f6ef; /* soft greenish background */
-      color: #2f3e2f; /* dark green-gray text */
+      background-color: #f3f6ef;
+      /* soft greenish background */
+      color: #2f3e2f;
+      /* dark green-gray text */
     }
 
     .nav {
-      background-color: #7a9e7e; /* muted green */
+      background-color: #7a9e7e;
+      /* muted green */
     }
 
     .nav a {
-      color: #f8fdf7; /* off-white text */
+      color: #f8fdf7;
+      /* off-white text */
     }
 
     .nav a:hover {
-      background-color: #5b7d5b; /* darker green hover */
+      background-color: #5b7d5b;
+      /* darker green hover */
     }
 
     .page-title h1 {
-      color: #446b47; /* rich forest green */
+      color: #446b47;
+      /* rich forest green */
     }
 
     .page-title p {
@@ -49,8 +56,45 @@
       background-color: #7a9e7e;
       color: #f8fdf7;
     }
+
+    <!--Parks Grid-->
+    .parks-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* two equal columns */
+      grid-template-rows: auto auto;
+      gap: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .park-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .park-info {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .park-info h1 {
+      color: #2e8b57;
+      margin-bottom: 10px;
+    }
+
+    .park-desc {
+      grid-column: 1 / span 2;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -79,21 +123,24 @@
     </div>
     <div class="park-info">
       <h1>Marina Park</h1>
-      <p>A scenic waterfront park known for its stunning lake views and calm ambiance. Visitors enjoy picnics by the water, paddleboarding, and local art installations throughout the promenade.</p>
+      <p>A scenic waterfront park known for its stunning lake views and calm ambiance. Visitors enjoy picnics by the
+        water, paddleboarding, and local art installations throughout the promenade.</p>
       <p>
-        <a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Marina-Park" target="_blank">Visit Website</a> |
+        <a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Marina-Park"
+          target="_blank">Visit Website</a> |
         <a href="https://maps.app.goo.gl/PsM26Wfd8scM92Zv9" target="_blank">View Location</a>
       </p>
-      <a class="weatherwidget-io"
-         href="https://forecast7.com/en/47d68n122d21/kirkland/?unit=us"
-         data-label_1="KIRKLAND"
-         data-label_2="WEATHER"
-         data-theme="original">KIRKLAND WEATHER</a>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/47d68n122d21/kirkland/?unit=us" data-label_1="KIRKLAND"
+        data-label_2="WEATHER" data-theme="original">KIRKLAND WEATHER</a>
       <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        !function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'weatherwidget-io-js');
       </script>
     </div>
 
@@ -103,21 +150,24 @@
     </div>
     <div class="park-info">
       <h1>Bridle Trails State Park</h1>
-      <p>This lush forest park is a haven for horseback riders, joggers, and hikers. The winding trails beneath towering evergreens offer a true escape into nature — peaceful and shaded year-round.</p>
+      <p>This lush forest park is a haven for horseback riders, joggers, and hikers. The winding trails beneath towering
+        evergreens offer a true escape into nature — peaceful and shaded year-round.</p>
       <p>
-        <a href="https://parks.wa.gov/find-parks/state-parks/bridle-trails-state-park" target="_blank">Visit Website</a> |
+        <a href="https://parks.wa.gov/find-parks/state-parks/bridle-trails-state-park" target="_blank">Visit Website</a>
+        |
         <a href="https://maps.app.goo.gl/rmiAwgSUspSzuCxL8" target="_blank">View Location</a>
       </p>
-      <a class="weatherwidget-io"
-         href="https://forecast7.com/en/47d67n122d12/redmond/"
-         data-label_1="REDMOND"
-         data-label_2="WEATHER"
-         data-theme="original">REDMOND WEATHER</a>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/47d67n122d12/redmond/" data-label_1="REDMOND"
+        data-label_2="WEATHER" data-theme="original">REDMOND WEATHER</a>
       <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        !function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'weatherwidget-io-js');
       </script>
     </div>
 
@@ -127,21 +177,24 @@
     </div>
     <div class="park-info">
       <h1>Bellevue Downtown Park</h1>
-      <p>A vibrant urban oasis featuring wide lawns, a reflective pond, and a cascading waterfall. The circular walking path and city skyline views make it a favorite for joggers and photographers alike.</p>
+      <p>A vibrant urban oasis featuring wide lawns, a reflective pond, and a cascading waterfall. The circular walking
+        path and city skyline views make it a favorite for joggers and photographers alike.</p>
       <p>
-        <a href="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/bellevue-downtown-park" target="_blank">Visit Website</a> |
+        <a href="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/bellevue-downtown-park"
+          target="_blank">Visit Website</a> |
         <a href="https://maps.app.goo.gl/VhdhPDCPxq7ictZn8" target="_blank">View Location</a>
       </p>
-      <a class="weatherwidget-io"
-         href="https://forecast7.com/en/47d61n122d20/bellevue/?unit=us"
-         data-label_1="BELLEVUE"
-         data-label_2="WEATHER"
-         data-theme="original">BELLEVUE WEATHER</a>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/47d61n122d20/bellevue/?unit=us" data-label_1="BELLEVUE"
+        data-label_2="WEATHER" data-theme="original">BELLEVUE WEATHER</a>
       <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        !function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'weatherwidget-io-js');
       </script>
     </div>
 
@@ -151,21 +204,24 @@
     </div>
     <div class="park-info">
       <h1>Juanita Bay Park</h1>
-      <p>Known for its wetlands and boardwalk views, this park attracts birdwatchers and photographers. The tranquil setting and easy trails make it a relaxing escape from city life.</p>
+      <p>Known for its wetlands and boardwalk views, this park attracts birdwatchers and photographers. The tranquil
+        setting and easy trails make it a relaxing escape from city life.</p>
       <p>
-        <a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Juanita-Bay-Park" target="_blank">Visit Website</a> |
+        <a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Juanita-Bay-Park"
+          target="_blank">Visit Website</a> |
         <a href="https://maps.app.goo.gl/skXuwaaDA7mgXqGV7" target="_blank">View Location</a>
       </p>
-      <a class="weatherwidget-io"
-         href="https://forecast7.com/en/47d68n122d21/kirkland/?unit=us"
-         data-label_1="KIRKLAND"
-         data-label_2="WEATHER"
-         data-theme="original">KIRKLAND WEATHER</a>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/47d68n122d21/kirkland/?unit=us" data-label_1="KIRKLAND"
+        data-label_2="WEATHER" data-theme="original">KIRKLAND WEATHER</a>
       <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        !function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'weatherwidget-io-js');
       </script>
     </div>
 
@@ -177,4 +233,5 @@
   </div>
 
 </body>
+
 </html>

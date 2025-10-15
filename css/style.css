@@ -56,17 +56,17 @@ ul.nav a:hover {
 }
 
 .main-content {
-  display: grid;
-  place-items: center; 
-  align-content: start;
-  height: auto;         
-  padding: 40px 0;      
+    display: grid;
+    place-items: center; 
+    align-content: start;
+    height: 80vh; 
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom:300px;
 }
 
-
-
 .title-box {
-    background-color: rgba(255, 255, 255, 0.709); 
+    background-color: rgba(255, 255, 255, 0.5); 
     padding: 8px 20px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
@@ -123,9 +123,7 @@ video {
 
 table {
   width: 100%;
-  margin: 0 auto;
   border-collapse: collapse;
-  padding-bottom: 40px;
 }
 
 th, td {
@@ -205,11 +203,11 @@ th {
   color: #2e8b57;
 }
  
-/* Optional: different background colors per category */
-.coffee { background-color: #E5EDD4; }    /* light tan */
-.breakfast { background-color: #E5EDD4; } /* light yellow */
-.lunch { background-color: #E5EDD4; }     /* light blue */
-.dinner { background-color: #E5EDD4; }    /* light pink */
+
+.coffee { background-color: #E5EDD4; }    
+.breakfast { background-color: #E5EDD4; } 
+.lunch { background-color: #E5EDD4; }     
+.dinner { background-color: #E5EDD4; }    
  
 /* ===== FOOTER ===== */
 .footer {
@@ -219,17 +217,8 @@ th {
   padding: 10px 0;
   margin-top: 30px;
   width: 100%;
-  position: static;
-  bottom: 0;
-  left: 0;
-  
 }
 
-.title-font {
-  font-family: "comma-base", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
 
 .title-color {color: rgb(79,119,45)}
 
